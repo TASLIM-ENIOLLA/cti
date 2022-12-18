@@ -6,7 +6,7 @@ export default function Register(){
 					<div className = 'col-12 col-md-8 mb-4 mb-md-0'>
 						<h2 className = 'text-capitalize bold mb-4 text-teal'>register now</h2>
 						<div className = 'text-sentence text-white fo-s-15'>
-							to register for any of our courses, click the button. Don't miss out. Utilize this benefit by signing up. Learn a skill right away!
+							to register for any of our courses, click the button. Don&apos;t miss out. Utilize this benefit by signing up. Learn a skill right away!
 						</div>
 					</div>
 					<div className = 'col-12 col-md-auto'>
