@@ -42,7 +42,7 @@ export default function Contact(){
 												</a>
 											</div>
 											<div>
-												<a className = 'underline' href = 'tel://+234-(0)--708-4712-978'>
+												<a className = 'underline' href = 'tel://+234-(0)-708-4712-978'>
 													+234-(0)-708-4712-978
 												</a>
 											</div>
