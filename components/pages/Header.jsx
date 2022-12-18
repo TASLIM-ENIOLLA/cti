@@ -23,24 +23,15 @@ export default function Header({setHeaderHeight}){
 			<div className = 'container py-1'>
 				<div className = 'row a-i-c j-c-space-between py-3 py-md-4'>
 					<div className = 'col-auto'>
-						<div className = 'row a-i-c'>
-							<div className = 'col-auto'>
-								<button className = 'border-0 bg-clear'>
-									<img src = '/icons/menu.png' width = '25' />
-								</button>	
-							</div>
-							<div className = 'col-auto'>
-								<a href = '#home'>
-									<img src = '/vercel.svg' width = '90' />
-								</a>	
-							</div>
-						</div>
+						<a href = '#home'>
+							<img src = '/vercel.svg' width = '90' />
+						</a>	
 					</div>
 					<div className = 'col-auto col-d-none col-md-d-block'>
 						<a href = '#home' className = 'mx-4 text-capitalize d-inline-block'>home</a>
 						<a href = '#about' className = 'mx-4 text-capitalize d-inline-block'>about</a>
+						<a href = '#services' className = 'mx-4 text-capitalize d-inline-block'>services</a>
 						<a href = '#courses' className = 'mx-4 text-capitalize d-inline-block'>courses</a>
-						<a href = '#pricing' className = 'mx-4 text-capitalize d-inline-block'>pricing</a>
 						<a href = '#contact' className = 'mx-4 text-capitalize d-inline-block'>contact</a>
 					</div>
 					<div className = 'col-auto'>
