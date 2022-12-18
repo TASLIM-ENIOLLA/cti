@@ -30,7 +30,7 @@ export default function Header({setHeaderHeight}){
 								</button>	
 							</div>
 							<div className = 'col-auto'>
-								<a href = '/'>
+								<a href = '#home'>
 									<img src = '/vercel.svg' width = '90' />
 								</a>	
 							</div>
