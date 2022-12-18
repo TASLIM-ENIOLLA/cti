@@ -25,7 +25,7 @@ export default function Contact(){
 										</div>
 										<div className = 'col-12'>
 											<div>
-												<a className = 'underline' href = 'mailto://codehubcti@gmail.com'>
+												<a className = 'text-cyan' href = 'mailto://codehubcti@gmail.com'>
 													codehubcti@gmail.com
 												</a>
 											</div>
@@ -37,12 +37,12 @@ export default function Contact(){
 										</div>
 										<div className = 'col-12'>
 											<div className = 'mb-3'>
-												<a className = 'underline' href = 'tel://+234-(0)-810-3589-869'>
+												<a className = 'text-cyan' href = 'tel://+234-(0)-810-3589-869'>
 													+234-(0)-810-3589-869
 												</a>
 											</div>
 											<div>
-												<a className = 'underline' href = 'tel://+234-(0)-708-4712-978'>
+												<a className = 'text-cyan' href = 'tel://+234-(0)-708-4712-978'>
 													+234-(0)-708-4712-978
 												</a>
 											</div>

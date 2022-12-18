@@ -1,7 +1,10 @@
 export default function Banner({headerHeight}){
 	return (
 		<section className = 'container py-5'>
-			<div className = 'row a-i-c transit custom-height'>
+			<div className = 'row a-i-c transit flex-row-reverse custom-height'>
+				<div className = 'col-lg-5'>
+					<img className = 'd-block w-100 max-width-450px mx-auto' src = '/icons/online-world.gif' />
+				</div>
 				<div className = 'col-lg-7 mb-5 mb-lg-0'>
 					<div className = 'row'>
 						<div className = 'col-12 mb-4'>
@@ -29,9 +32,6 @@ export default function Banner({headerHeight}){
 						</div>
 					</div>
 				</div>
-				<div className = 'col-lg-5'>
-					<img className = 'd-block w-100 max-width-400px mx-auto' src = '/images/a.png' />
-				</div>
 			</div>
 			<style jsx>{`
 				.custom-height{
@@ -40,8 +40,8 @@ export default function Banner({headerHeight}){
 				.max-width-500px{
 					max-width: 500px;
 				}
-				.max-width-400px{
-					max-width: 400px;
+				.max-width-450px{
+					max-width: 450px;
 				}
 			`}</style>
 		</section>
