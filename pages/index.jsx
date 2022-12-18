@@ -1,6 +1,7 @@
 import {Fragment, useState} from 'react'
 import Header from '/components/pages/Header'
 import Banner from '/components/pages/Banner'
+import About from '/components/pages/About'
 import Sevices from '/components/pages/Sevices'
 import Courses from '/components/pages/Courses'
 import Register from '/components/pages/Register'
@@ -14,6 +15,7 @@ export default function Index(){
 		<Fragment>
 			<Header setHeaderHeight = {setHeaderHeight} />
 			<Banner headerHeight = {headerHeight} />
+			<About />
 			<Sevices />
 			<Courses />
 			<Register />

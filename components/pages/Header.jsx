@@ -24,7 +24,7 @@ export default function Header({setHeaderHeight}){
 				<div className = 'row a-i-c j-c-space-between py-3 py-md-4'>
 					<div className = 'col-auto'>
 						<div className = 'row a-i-c'>
-							<div className = 'd-none col-auto'>
+							<div className = 'col-auto'>
 								<button className = 'border-0 bg-clear'>
 									<img src = '/icons/menu.png' width = '25' />
 								</button>	

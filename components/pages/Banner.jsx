@@ -1,7 +1,7 @@
 export default function Banner({headerHeight}){
 	return (
 		<section className = 'container py-5'>
-			<div className = 'row a-i-c custom-height'>
+			<div className = 'row a-i-c transit custom-height'>
 				<div className = 'col-lg-7 mb-5 mb-lg-0'>
 					<div className = 'row'>
 						<div className = 'col-12 mb-4'>
@@ -15,16 +15,16 @@ export default function Banner({headerHeight}){
 						</div>
 						<div className = 'col-12'>
 							<div className = 'mb-4'>
-								<BannerLists title = 'instructor-led sessions' />
+								<BannerLists title = 'Acquisition of highly-sought IT skills' />
 							</div>
 							<div className = 'mb-4'>
-								<BannerLists title = 'instructor-led sessions' />
+								<BannerLists title = 'Tutilage with modern development frameworks' />
 							</div>
 							<div className = 'mb-4'>
-								<BannerLists title = 'instructor-led sessions' />
+								<BannerLists title = 'A federal government approved certificate' />
 							</div>
 							<div className = 'mb-4'>
-								<BannerLists title = 'instructor-led sessions' />
+								<BannerLists title = 'Free mentorship during and after the duration of the course' />
 							</div>
 						</div>
 					</div>
@@ -69,10 +69,10 @@ function BannerButtons(){
 	return (
 		<div className = 'row a-i-c'>
 			<div className = 'col-6'>
-				<button className = 'd-block w-100 btn py-3 px-4 bg-orange text-capitalize text-white shadow'>get started</button>
+				<a href = '/register' className = 'd-block w-100 btn py-3 px-4 bg-orange text-capitalize text-white shadow'>get started</a>
 			</div>
 			<div className = 'col-6'>
-				<button className = 'd-block w-100 btn py-3 px-4 bg-clear border-dark border text-capitalize text-dark'>contact us</button>
+				<a href = '/contact' className = 'd-block w-100 btn py-3 px-4 bg-clear border-dark border text-capitalize text-dark'>contact us</a>
 			</div>
 		</div>
 	)

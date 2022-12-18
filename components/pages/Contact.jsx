@@ -10,20 +10,20 @@ export default function Contact(){
 					<div className = 'col-12'>
 						<div className = 'row'>
 							<div className = 'col-12 col-lg-4 mb-5 mb-lg-0'>
-								<div className = 'container-fluid shadow- border-top-teal py-5'>
-									<div className = 'row a-i-c mb-5'>
-										<div className = 'col-auto'>
+								<div className = 'container-fluid border-top-teal py-5'>
+									<div className = 'row mb-4 text-center'>
+										<div className = 'col-12 mb-3'>
 											<img src = '/icons/placeholder.png' width = '25' />
 										</div>
-										<div className = 'col'>
-											<address className = 'text-sentence'>leave us a message and be sure to get a response leave us a message and be sure to get a response </address>
+										<div className = 'col-12'>
+											<address className = 'text-sentence'>No. 11, Ayedun street, Tanke Akata, Ilorin, Kwara state, Nigeria.</address>
 										</div>
 									</div>
-									<div className = 'row a-i-c mb-5'>
-										<div className = 'col-auto'>
+									<div className = 'row mb-4 text-center'>
+										<div className = 'col-12 mb-3'>
 											<img src = '/icons/email.png' width = '25' />
 										</div>
-										<div className = 'col'>
+										<div className = 'col-12'>
 											<div>
 												<a className = 'underline' href = 'mailto://codehubcti@gmail.com'>
 													codehubcti@gmail.com
@@ -31,14 +31,19 @@ export default function Contact(){
 											</div>
 										</div>
 									</div>
-									<div className = 'row a-i-c'>
-										<div className = 'col-auto'>
+									<div className = 'row text-center'>
+										<div className = 'col-12 mb-3'>
 											<img src = '/icons/apple.png' width = '25' />
 										</div>
-										<div className = 'col'>
+										<div className = 'col-12'>
+											<div className = 'mb-3'>
+												<a className = 'underline' href = 'tel://+234-(0)-810-3589-869'>
+													+234-(0)-810-3589-869
+												</a>
+											</div>
 											<div>
-												<a className = 'underline' href = 'tel://+234 (0)-708-4712-978'>
-													+234 (0)708-4712-978
+												<a className = 'underline' href = 'tel://+234-(0)--708-4712-978'>
+													+234-(0)-708-4712-978
 												</a>
 											</div>
 										</div>
@@ -46,7 +51,7 @@ export default function Contact(){
 								</div>
 							</div>
 							<div className = 'col-12 col-lg-8'>
-								<div className = 'container-fluid shadow- border-top-teal py-5 px-3'>
+								<div className = 'container-fluid border-top-teal py-5 px-3'>
 									<div className = 'row'>
 										<div className = 'col-12 mb-5'>
 											<h2 className = 'text-capitalize text-center text-teal bold'>quick message</h2>
