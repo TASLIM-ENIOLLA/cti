@@ -27,7 +27,7 @@ export default function About(){
 									<div className = 'text-center'>
 										<img src = '/icons/vision-statement.png' className = 'mb-4' width = '200' />
 										<h5 className = 'mb-4 bold text-capitalize one-line'>
-											our vission
+											our vision
 										</h5>
 									</div>
 									<div className = 'text-indent-5 text-dark text-sentence'>
