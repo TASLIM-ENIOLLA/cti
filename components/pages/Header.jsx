@@ -27,7 +27,7 @@ export default function Header({...className}){
 			<div className = 'container'>
 				<div className = 'row a-i-c j-c-space-between py-3'>
 					<div className = 'col-auto'>
-						<Link href = '#home'>
+						<Link href = '/'>
 							<Image src = '/vercel.svg' width = '90' height = '20' />
 						</Link>	
 					</div>
