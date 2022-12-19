@@ -1,4 +1,15 @@
+import {API} from '/api'
+import {useState} from 'react'
+
 export default function Contact(){
+	const [formData, setFormData] = useState({
+		name: '',
+		subject: '',
+		email: '',
+		phone: '',
+		message: ''
+	})
+
 	return (
 		<div className = 'bg-white'>
 			<section className = 'container py-5'>
@@ -11,38 +22,38 @@ export default function Contact(){
 						<div className = 'row'>
 							<div className = 'col-12 col-lg-4 mb-5 mb-lg-0'>
 								<div className = 'container-fluid border-top-teal py-5'>
-									<div className = 'row mb-4 text-center'>
+									<div className = 'row bg-white shadow rounded-2x py-4 mb-4 text-center'>
 										<div className = 'col-12 mb-3'>
 											<img src = '/icons/placeholder.png' width = '25' />
 										</div>
 										<div className = 'col-12'>
-											<address className = 'text-sentence'>No. 11, Ayedun street, Tanke Akata, Ilorin, Kwara state, Nigeria.</address>
+											<address className = 'text-sentence fo-s-15-'>No. 11, Ayedun street, Tanke Akata, Ilorin, Kwara state, Nigeria.</address>
 										</div>
 									</div>
-									<div className = 'row mb-4 text-center'>
+									<div className = 'row bg-white shadow rounded-2x py-4 mb-4 text-center'>
 										<div className = 'col-12 mb-3'>
 											<img src = '/icons/email.png' width = '25' />
 										</div>
 										<div className = 'col-12'>
 											<div>
-												<a className = 'text-cyan' href = 'mailto://codehubcti@gmail.com'>
+												<a className = 'text-cyan fo-s-15-' href = 'mailto://codehubcti@gmail.com'>
 													codehubcti@gmail.com
 												</a>
 											</div>
 										</div>
 									</div>
-									<div className = 'row text-center'>
+									<div className = 'row bg-white shadow rounded-2x py-4 text-center'>
 										<div className = 'col-12 mb-3'>
 											<img src = '/icons/apple.png' width = '25' />
 										</div>
 										<div className = 'col-12'>
 											<div className = 'mb-3'>
-												<a className = 'text-cyan' href = 'tel://+234-(0)-810-3589-869'>
+												<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-810-3589-869'>
 													+234-(0)-810-3589-869
 												</a>
 											</div>
 											<div>
-												<a className = 'text-cyan' href = 'tel://+234-(0)-708-4712-978'>
+												<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-708-4712-978'>
 													+234-(0)-708-4712-978
 												</a>
 											</div>
@@ -52,34 +63,66 @@ export default function Contact(){
 							</div>
 							<div className = 'col-12 col-lg-8'>
 								<div className = 'container-fluid border-top-teal py-5 px-3'>
-									<div className = 'row'>
+									<form onSubmit = {(e) => {
+										e.preventDefault()
+
+										fetch(API.SEND_MAIL, {
+											method: 'POST',
+											body: JSON.stringify(formData),
+											headers: {
+												Accept: 'application/json, text/plain, */*',
+												'Context-type': 'application/json'
+											}
+										})
+										.then((res) => {
+											if(res.status === 200) res.text().then(e => setFormData({
+												name: '', subject: '', email: '', phone: '', message: ''
+											}))
+											else console.log('An error occured!')
+										})
+									}} className = 'row'>
 										<div className = 'col-12 mb-5'>
 											<h2 className = 'text-capitalize text-center text-teal bold'>quick message</h2>
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence bold mb-2'>name</p>
-											<input type = 'name' className = 'd-block p-3 border rounded-lg w-100' />
+											<p className = 'text-sentence half-bold mb-2'>name</p>
+											<input value = {formData.name} onChange = {(e) => setFormData({
+												...formData,
+												name: e.target.value
+											})} type = 'name' className = 'd-block p-3 border rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence bold mb-2'>subject</p>
-											<input type = 'subject' className = 'd-block p-3 border rounded-lg w-100' />
+											<p className = 'text-sentence half-bold mb-2'>subject</p>
+											<input value = {formData.subject} onChange = {(e) => setFormData({
+												...formData,
+												subject: e.target.value
+											})} type = 'subject' className = 'd-block p-3 border rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence bold mb-2'>email</p>
-											<input type = 'email' className = 'd-block p-3 border rounded-lg w-100' />
+											<p className = 'text-sentence half-bold mb-2'>email</p>
+											<input value = {formData.email} onChange = {(e) => setFormData({
+												...formData,
+												email: e.target.value
+											})} type = 'email' className = 'd-block p-3 border rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence bold mb-2'>phone</p>
-											<input type = 'phone' className = 'd-block p-3 border rounded-lg w-100' />
+											<p className = 'text-sentence half-bold mb-2'>phone</p>
+											<input value = {formData.phone} onChange = {(e) => setFormData({
+												...formData,
+												phone: e.target.value
+											})} type = 'phone' className = 'd-block p-3 border rounded-lg w-100' />
 										</div>
 										<div className = 'col-12 mb-5'>
-											<p className = 'text-sentence bold mb-2'>message</p>
-											<textarea className = 'd-block p-3 border rounded-lg w-100 resize-0' rows = '5'></textarea>
+											<p className = 'text-sentence half-bold mb-2'>message</p>
+											<textarea value = {formData.message} onChange = {(e) => setFormData({
+												...formData,
+												message: e.target.value
+											})} className = 'd-block p-3 border rounded-lg w-100 resize-0' rows = '5'></textarea>
 										</div>
 										<div className = 'col-md-6'>
-											<button className = 'd-block p-3 btn bg-teal text-white rounded-lg w-100 text-capitalize bold'>send message</button>
+											<button className = 'd-block p-3 btn bg-teal text-white rounded-2x w-100 text-capitalize bold'>send message</button>
 										</div>
-									</div>
+									</form>
 								</div>
 							</div>
 						</div>

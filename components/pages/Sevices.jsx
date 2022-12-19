@@ -2,7 +2,6 @@ import {API} from '/api'
 import {useState, useEffect} from 'react'
 
 export default function Sevices(){
-	const CardBGs = ['yellow', 'pink', 'blue']
 	const [servicesList, setServicesList] = useState([])
 
 	useEffect(() => {
@@ -22,15 +21,14 @@ export default function Sevices(){
 					<div className = 'col-12'>
 						<div className = 'row'>{servicesList.map(({title, subtitle, icon, query}, index) => (
 							<div className = 'col-12 col-md-6 col-lg-4 mb-5' key = {query}>
-								<div title = {title} className = {`py-5 px-4 bg-light-${CardBGs[Math.floor(Math.random() * 3)]} rounded-2x shadow`}>
+								<div title = {title} className = {`py-5 px-4 rounded-2x shadow`}>
 									<img src = {icon} className = 'mb-4' width = '55' />
 									<div className = 'fo-s-15 mb-4 bold text-capitalize one-line'>
 										{title}
 									</div>
-									<div className = 'card-subtitle-height text-sentence mb-4'>
+									<div className = 'card-subtitle-height triple-line text-sentence'>
 										{subtitle}
 									</div>
-									<a href = {`/learn-more/${query}`} className = 'btn py-2 bg-teal text-capitalize text-white'>learn more</a>
 								</div>
 							</div>
 						))}</div>
@@ -38,10 +36,7 @@ export default function Sevices(){
 				</div>
 			</div>
 			<style jsx>{`
-				.card-subtitle-height   {height: 60px}
-				.bg-light-yellow        {background: #ffd179}
-				.bg-light-pink          {background: #fad7d5}
-				.bg-light-blue          {background: #d0ecf8}
+				.card-subtitle-height {height: 60px}
 			`}</style>
 		</section>
 	)

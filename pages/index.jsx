@@ -9,12 +9,10 @@ import Contact from '/components/pages/Contact'
 import Footer from '/components/pages/Footer'
 
 export default function Index(){
-	const [headerHeight, setHeaderHeight] = useState()
-
 	return (
 		<Fragment>
-			<Header setHeaderHeight = {setHeaderHeight} />
-			<Banner headerHeight = {headerHeight} />
+			<Header />
+			<Banner />
 			<About />
 			<Sevices />
 			<Courses />

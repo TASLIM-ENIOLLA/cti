@@ -397,6 +397,12 @@ body{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.triple-line{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .theme-icon{
     display: block;
     width: 35px;

@@ -1,9 +1,9 @@
-export default function Banner({headerHeight}){
+export default function Banner(){
 	return (
 		<section className = 'container py-5'>
-			<div className = 'row a-i-c transit flex-row-reverse custom-height'>
+			<div className = 'row a-i-c transit flex-row-reverse py-4'>
 				<div className = 'col-lg-5'>
-					<img className = 'd-block w-100 max-width-450px mx-auto' src = '/icons/online-world.gif' />
+					<img className = 'd-block w-100 max-width-450px mx-auto' src = '/icons/code-typing.png' />
 				</div>
 				<div className = 'col-lg-7 mb-5 mb-lg-0'>
 					<div className = 'row'>
@@ -34,9 +34,6 @@ export default function Banner({headerHeight}){
 				</div>
 			</div>
 			<style jsx>{`
-				.custom-height{
-					min-height: calc(100vh - ${headerHeight}px);
-				}
 				.max-width-500px{
 					max-width: 500px;
 				}
@@ -69,7 +66,7 @@ function BannerButtons(){
 	return (
 		<div className = 'row a-i-c'>
 			<div className = 'col-6'>
-				<a href = '/register' className = 'd-block w-100 btn py-3 px-4 bg-orange text-capitalize text-white shadow'>get started</a>
+				<a href = '/register' className = 'd-block w-100 btn py-3 px-4 bg-teal text-capitalize text-white shadow'>get started</a>
 			</div>
 			<div className = 'col-6'>
 				<a href = '/contact' className = 'd-block w-100 btn py-3 px-4 bg-clear border-dark border text-capitalize text-dark'>contact us</a>

@@ -16,7 +16,9 @@ export default function Courses(){
 				<div className = 'row'>
 					<div className = 'col-12 my-5 text-center'>
 						<h1 className = 'text-capitalize text-dark bold'>our courses</h1>
-						<div className = 'text-sentence fo-s-15 text-muted col-lg-6 mx-auto p-0'>our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees</div>
+						<div className = 'text-sentence fo-s-15 text-muted col-lg-6 mx-auto p-0'>
+							we tutor in all these modern languages and application
+						</div>
 					</div>
 					<div className = 'col-12'>
 						<div className = 'row j-c-c'>{coursesList.map(({title, icon, query}, index) => (
@@ -29,6 +31,11 @@ export default function Courses(){
 								</a>
 							</div>
 						))}</div>
+					</div>
+					<div className = 'col-12 text-center py-4'>
+						<a href = '/courses' className = 'bold text-capitalize bg-teal text-white btn rounded-2x px-5 py-3'>
+							learn more
+						</a>
 					</div>
 				</div>
 			</div>

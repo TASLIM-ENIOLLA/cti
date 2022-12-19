@@ -2,12 +2,12 @@ export default function handler(_, res){
 	res.status(200).json([
 		{
 			title: 'app development',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
+			subtitle: 'we develop mobile application for all platforms using modern codebased by identify client\'s needs and converting them into a working software',
 			icon: '/icons/app-development.png',
 			query: 'app-development'
 		},
 		{
-			title: 'cloud data',
+			title: 'cloud computing',
 			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
 			icon: '/icons/cloud-data.png',
 			query: 'cloud-data'

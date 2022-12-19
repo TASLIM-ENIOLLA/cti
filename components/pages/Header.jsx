@@ -1,41 +1,48 @@
 import {useEffect, useRef, useState} from 'react'
 
-export default function Header({setHeaderHeight}){
+export default function Header({...className}){
 	const headerComponent = useRef()
 	const [transparencyIndex, setTransparencyIndex] = useState(0)
 
 	useEffect(() => {
-		const headerHeight = Math.ceil(headerComponent.current.getBoundingClientRect().height)
-		setHeaderHeight(headerHeight)
+		const headerHeight = Math.ceil(
+			headerComponent
+			.current
+			.getBoundingClientRect()
+			.height
+		)
 
-		window.onscroll = () => {
-			const {scrollY: windowScrollY} = window
+		window.addEventListener('scroll', () => {
+			const {scrollY} = window
 			
-			if(windowScrollY <= headerHeight)
-				setTransparencyIndex(windowScrollY / headerHeight)
-			else
-				setTransparencyIndex(1)
-		}
+			if(scrollY <= headerHeight) setTransparencyIndex(scrollY / headerHeight)
+			else setTransparencyIndex(1)
+		})
 	}, [])
 
 	return (
-		<header ref = {headerComponent} className = 'position-sticky transit top-0 left-0 bg-white-lucent z-index-10'>
-			<div className = 'container py-1'>
-				<div className = 'row a-i-c j-c-space-between py-3 py-md-4'>
+		<header ref = {headerComponent} className = {`position-sticky transit top-0 left-0 bg-white-lucent z-index-10 ${className}`}>
+			<div className = 'container'>
+				<div className = 'row a-i-c j-c-space-between py-4'>
 					<div className = 'col-auto'>
 						<a href = '#home'>
 							<img src = '/vercel.svg' width = '90' />
 						</a>	
 					</div>
-					<div className = 'col-auto col-d-none col-md-d-block'>
+					<div className = 'col-d-none col-lg-d-block col-auto'>
 						<a href = '#home' className = 'mx-4 text-capitalize d-inline-block'>home</a>
 						<a href = '#about' className = 'mx-4 text-capitalize d-inline-block'>about</a>
 						<a href = '#services' className = 'mx-4 text-capitalize d-inline-block'>services</a>
 						<a href = '#courses' className = 'mx-4 text-capitalize d-inline-block'>courses</a>
 						<a href = '#contact' className = 'mx-4 text-capitalize d-inline-block'>contact</a>
 					</div>
-					<div className = 'col-auto'>
-						<button className = 'btn py-2 bg-teal text-capitalize text-white'>view courses</button>
+					<div className = 'col-d-none col-lg-d-block col-auto'>
+						<a href = '/courses' className = 'btn py-2 px-3 bg-teal rounded-2x text-capitalize text-white bold'>view courses</a>
+					</div>
+					<div className = 'col-lg-d-none col-auto'>
+						<button className = 'border-0 bg-clear'>
+							<span className = 'bi-border-width fa-2x'></span>
+						</button>
 					</div>
 				</div>
 			</div>
