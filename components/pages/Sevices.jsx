@@ -1,4 +1,5 @@
 import {API} from '/api'
+import Image from 'next/image'
 import {useState, useEffect} from 'react'
 
 export default function Sevices(){
@@ -22,7 +23,7 @@ export default function Sevices(){
 						<div className = 'row'>{servicesList.map(({title, subtitle, icon, query}, index) => (
 							<div className = 'col-12 col-md-6 col-lg-4 mb-5' key = {query}>
 								<div title = {title} className = {`py-5 px-4 rounded-2x shadow`}>
-									<img src = {icon} className = 'mb-4' width = '55' />
+									<Image src = {icon} className = 'mb-4' width = '55' height = '55' />
 									<div className = 'fo-s-15 mb-4 bold text-capitalize one-line'>
 										{title}
 									</div>

@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 export default function Banner(){
 	return (
 		<section className = 'container py-5'>
 			<div className = 'row a-i-c transit flex-row-reverse py-4'>
 				<div className = 'col-lg-5'>
-					<img className = 'd-block w-100 max-width-450px mx-auto' src = '/icons/code-typing.png' />
+					<img alt = 'A developer coding on laptop' className = 'd-block w-100 max-width-450px mx-auto' src = '/icons/code-typing.png' />
 				</div>
 				<div className = 'col-lg-7 mb-5 mb-lg-0'>
 					<div className = 'row'>
@@ -51,7 +53,7 @@ function BannerLists({title}){
 			<div className = 'col-12'>
 				<div className = 'row'>
 					<div className = 'col-auto'>
-						<img src = '/icons/accept.png' width = '20' />
+						<Image alt = 'Check mark image' src = '/icons/accept.png' width = '20' height = '20' />
 					</div>
 					<div className = 'col'>
 						<div className = 'text-dark fo-s-15 text-sentence'>{title}</div>

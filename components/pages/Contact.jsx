@@ -1,5 +1,6 @@
 import {API} from '/api'
 import {useState} from 'react'
+import Image from 'next/image'
 
 export default function Contact(){
 	const [formData, setFormData] = useState({
@@ -22,40 +23,54 @@ export default function Contact(){
 						<div className = 'row'>
 							<div className = 'col-12 col-lg-4 mb-5 mb-lg-0'>
 								<div className = 'container-fluid border-top-teal py-5'>
-									<div className = 'row bg-white shadow rounded-2x py-4 mb-4 text-center'>
-										<div className = 'col-12 mb-3'>
-											<img src = '/icons/placeholder.png' width = '25' />
-										</div>
-										<div className = 'col-12'>
-											<address className = 'text-sentence fo-s-15-'>No. 11, Ayedun street, Tanke Akata, Ilorin, Kwara state, Nigeria.</address>
-										</div>
-									</div>
-									<div className = 'row bg-white shadow rounded-2x py-4 mb-4 text-center'>
-										<div className = 'col-12 mb-3'>
-											<img src = '/icons/email.png' width = '25' />
-										</div>
-										<div className = 'col-12'>
-											<div>
-												<a className = 'text-cyan fo-s-15-' href = 'mailto://codehubcti@gmail.com'>
-													codehubcti@gmail.com
-												</a>
+									<div className = 'row'>
+										<div className = 'col-12 col-md-6 col-lg-12 mb-5'>
+											<div className = 'container-fluid py-4 shadow rounded-2x h-100'>
+												<div className = 'row flex-column j-c-c text-center'>
+													<div className = 'col-12 mb-3'>
+														<Image alt = 'placeholder' src = '/icons/placeholder.png' width = '25' height = '25' />
+													</div>
+													<div className = 'col-12'>
+														<address className = 'text-sentence fo-s-15-'>No. 11, Ayedun street, Tanke Akata, Ilorin, Kwara state, Nigeria.</address>
+													</div>
+												</div>
 											</div>
 										</div>
-									</div>
-									<div className = 'row bg-white shadow rounded-2x py-4 text-center'>
-										<div className = 'col-12 mb-3'>
-											<img src = '/icons/apple.png' width = '25' />
-										</div>
-										<div className = 'col-12'>
-											<div className = 'mb-3'>
-												<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-810-3589-869'>
-													+234-(0)-810-3589-869
-												</a>
+										<div className = 'col-12 col-md-6 col-lg-12 mb-5'>
+											<div className = 'container-fluid py-4 shadow rounded-2x h-100'>
+												<div className = 'row flex-column j-c-c text-center'>
+													<div className = 'col-12 mb-3'>
+														<Image alt = 'email' src = '/icons/email.png' width = '25' height = '25' />
+													</div>
+													<div className = 'col-12'>
+														<div>
+															<a className = 'text-cyan fo-s-15-' href = 'mailto://codehubcti@gmail.com'>
+																codehubcti@gmail.com
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
-											<div>
-												<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-708-4712-978'>
-													+234-(0)-708-4712-978
-												</a>
+										</div>
+										<div className = 'col-12 col-md-6 col-lg-12'>
+											<div className = 'container-fluid py-4 shadow rounded-2x h-100'>
+												<div className = 'row flex-column j-c-c text-center'>
+													<div className = 'col-12 mb-3'>
+														<Image alt = 'apple' src = '/icons/apple.png' width = '25' height = '25' />
+													</div>
+													<div className = 'col-12'>
+														<div className = 'mb-3'>
+															<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-810-3589-869'>
+																+234-(0)-810-3589-869
+															</a>
+														</div>
+														<div>
+															<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-708-4712-978'>
+																+234-(0)-708-4712-978
+															</a>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>

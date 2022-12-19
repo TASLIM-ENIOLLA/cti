@@ -1,3 +1,5 @@
+import Link from 'next/link'
+import Image from 'next/image'
 import {useEffect, useRef, useState} from 'react'
 
 export default function Header({...className}){
@@ -25,19 +27,19 @@ export default function Header({...className}){
 			<div className = 'container'>
 				<div className = 'row a-i-c j-c-space-between py-4'>
 					<div className = 'col-auto'>
-						<a href = '#home'>
-							<img src = '/vercel.svg' width = '90' />
-						</a>	
+						<Link href = '#home'>
+							<Image src = '/vercel.svg' width = '90' height = '20' />
+						</Link>	
 					</div>
 					<div className = 'col-d-none col-lg-d-block col-auto'>
-						<a href = '#home' className = 'mx-4 text-capitalize d-inline-block'>home</a>
-						<a href = '#about' className = 'mx-4 text-capitalize d-inline-block'>about</a>
-						<a href = '#services' className = 'mx-4 text-capitalize d-inline-block'>services</a>
-						<a href = '#courses' className = 'mx-4 text-capitalize d-inline-block'>courses</a>
-						<a href = '#contact' className = 'mx-4 text-capitalize d-inline-block'>contact</a>
+						<Link href = '#home' className = 'mx-4 text-capitalize d-inline-block'>home</Link>
+						<Link href = '#about' className = 'mx-4 text-capitalize d-inline-block'>about</Link>
+						<Link href = '#services' className = 'mx-4 text-capitalize d-inline-block'>services</Link>
+						<Link href = '#courses' className = 'mx-4 text-capitalize d-inline-block'>courses</Link>
+						<Link href = '#contact' className = 'mx-4 text-capitalize d-inline-block'>contact</Link>
 					</div>
 					<div className = 'col-d-none col-lg-d-block col-auto'>
-						<a href = '/courses' className = 'btn py-2 px-3 bg-teal rounded-2x text-capitalize text-white bold'>view courses</a>
+						<Link href = '/courses' className = 'btn py-2 px-3 bg-teal rounded-2x text-capitalize text-white bold'>view courses</Link>
 					</div>
 					<div className = 'col-lg-d-none col-auto'>
 						<button className = 'border-0 bg-clear'>

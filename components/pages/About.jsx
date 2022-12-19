@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About(){
 	return (
 		<section className = 'bg-white'>
@@ -12,7 +14,7 @@ export default function About(){
 							<div className = 'col-12 col-lg mb-lg-0 mb-5'>
 								<div className = {`py-5 px-4 text-justify bg-white rounded-2x shadow`}>
 									<div className = 'text-center'>
-										<img src = '/icons/storyboard.png' className = 'mb-4' width = '200' />
+										<Image alt = 'Our story image' src = '/icons/storyboard.png' className = 'mb-4' width = '200' height = '200' />
 										<h5 className = 'mb-4 bold text-capitalize one-line'>
 											our story
 										</h5>
@@ -25,7 +27,7 @@ export default function About(){
 							<div className = 'col-12 col-lg'>
 								<div className = {`py-5 px-4 text-justify bg-white rounded-2x shadow`}>
 									<div className = 'text-center'>
-										<img src = '/icons/vision-statement.png' className = 'mb-4' width = '200' />
+										<Image alt = 'Our vision image' src = '/icons/vision-statement.png' className = 'mb-4' width = '200' height = '200' />
 										<h5 className = 'mb-4 bold text-capitalize one-line'>
 											our vision
 										</h5>
