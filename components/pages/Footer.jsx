@@ -9,7 +9,7 @@ export default function Footer(){
 						<Image src = '/vercel.svg' className = 'mb-4' width = '100' height = '23' />
 						<div className = 'half-bold'>
 							&copy; {new Date().getFullYear()} All rights reserved. Codehub Technological Institute
-							<sub>&reg;</sub>
+							<sup>&reg;</sup>
 						</div>
 					</div>
 				</div>

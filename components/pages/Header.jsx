@@ -25,7 +25,7 @@ export default function Header({...className}){
 	return (
 		<header ref = {headerComponent} className = {`position-sticky transit top-0 left-0 bg-white-lucent z-index-10 ${className}`}>
 			<div className = 'container'>
-				<div className = 'row a-i-c j-c-space-between py-4'>
+				<div className = 'row a-i-c j-c-space-between py-3'>
 					<div className = 'col-auto'>
 						<Link href = '#home'>
 							<Image src = '/vercel.svg' width = '90' height = '20' />

@@ -19,7 +19,7 @@ export default function handler(_, res){
 			query: 'computer-networks'
 		},
 		{
-			title: 'graphic designer',
+			title: 'graphic design',
 			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
 			icon: '/icons/graphic-designer.png',
 			query: 'graphic-designer'
