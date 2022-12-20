@@ -25,7 +25,7 @@ export default function Header({...className}){
 	return (
 		<header ref = {headerComponent} className = {`position-sticky transit top-0 left-0 bg-white-lucent z-index-10 ${className}`}>
 			<div className = 'container'>
-				<div className = 'row a-i-c j-c-space-between py-3'>
+				<div className = 'row a-i-c j-c-space-between py-3 py-lg-4'>
 					<div className = 'col-auto'>
 						<Link href = '/'>
 							<Image src = '/vercel.svg' width = '90' height = '20' />
@@ -51,7 +51,7 @@ export default function Header({...className}){
 			<style jsx>{`
 				.bg-white-lucent{
 					background: rgba(255, 255, 255, ${transparencyIndex});
-					box-shadow: 0px 0px ${((transparencyIndex / .9) * 5)}px gainsboro;
+					box-shadow: 0px 0px ${((transparencyIndex / .9) * 9)}px gainsboro;
 				}
 				.z-index-10{
 					z-index: 10;

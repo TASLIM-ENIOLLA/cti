@@ -8,7 +8,7 @@ export default function Footer(){
 					<div className = 'text-center col-auto text-dark'>
 						<Image src = '/vercel.svg' className = 'mb-4' width = '100' height = '23' />
 						<div className = 'half-bold'>
-							&copy; {new Date().getFullYear()} All rights reserved. Codehub Technological Institute
+							All rights reserved &copy; {new Date().getFullYear()}. Codehub Technological Institute
 							<sup>&reg;</sup>
 						</div>
 					</div>

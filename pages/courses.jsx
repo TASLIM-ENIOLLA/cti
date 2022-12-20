@@ -35,7 +35,7 @@ function CoursesComponent(){
 						</div>
 					</div>
 					<div className = 'col-12 mb-5'>
-						<div className = 'row'>{coursesList.map(({title, icon, query}, index) => (
+						<div className = 'row'>{coursesList.map(({title, subtitle, icon, query}, index) => (
 							<div className = 'col-12 col-md-6 col-lg-4 mb-5' key = {query}>
 								<div title = {title} className = {`py-4 px-4 rounded-2x shadow`}>
 									<Image alt = {title} src = {icon} className = 'my-4' height = '55' width = '55' />
@@ -43,12 +43,7 @@ function CoursesComponent(){
 										{title}
 									</div>
 									<div className = 'card-subtitle-height triple-line text-sentence mb-4'>
-										lorem ipsum dolor sit amet consectuer lorem ipsum dolor sit amet consectuer lorem ipsum dolor sit amet consectuer lorem ipsum dolor sit amet consectuer
-									</div>
-									<div>
-										<button className = 'py-3 rounded-1x bold text-white letter-spacing-1 border-0 bg-teal btn d-block w-100 text-capitalize'>
-											register
-										</button>
+										{subtitle}
 									</div>
 								</div>
 							</div>
@@ -59,16 +54,3 @@ function CoursesComponent(){
 		</section>
 	)
 }
-/*
-<div className = 'col-12 col-md-6 col-lg-4 mb-5' key = {query}>
-	<div title = {title} className = {`py-5 px-4 rounded-2x shadow`}>
-		<img src = {icon} className = 'mb-4' width = '55' />
-		<div className = 'fo-s-15 mb-4 bold text-capitalize one-line'>
-			{title}
-		</div>
-		<div className = 'card-subtitle-height triple-line text-sentence'>
-			{subtitle}
-		</div>
-	</div>
-</div>
-*/
