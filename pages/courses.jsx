@@ -37,12 +37,12 @@ function CoursesComponent(){
 					<div className = 'col-12 mb-5'>
 						<div className = 'row'>{coursesList.map(({title, subtitle, icon, query}, index) => (
 							<div className = 'col-12 col-md-6 col-lg-4 mb-5' key = {query}>
-								<div title = {title} className = {`py-4 px-4 rounded-2x shadow`}>
+								<div title = {title} className = {`py-4 px-4 shadow rounded-2x h-100`}>
 									<Image alt = {title} src = {icon} className = 'my-4' height = '55' width = '55' />
 									<div className = 'fo-s-15 mb-4 bold text-capitalize one-line'>
 										{title}
 									</div>
-									<div className = 'card-subtitle-height triple-line text-sentence mb-4'>
+									<div className = 'card-subtitle-height text-sentence mb-4'>
 										{subtitle}
 									</div>
 								</div>

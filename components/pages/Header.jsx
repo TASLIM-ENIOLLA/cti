@@ -48,6 +48,8 @@ export default function Header({...className}){
 					</div>
 				</div>
 			</div>
+			<div className = 'container-fluid vw-100 position-fixed top-0 left-0 z-index-20 bg-dark-lucent'>
+			</div>
 			<style jsx>{`
 				.bg-white-lucent{
 					background: rgba(255, 255, 255, ${transparencyIndex});
@@ -55,6 +57,12 @@ export default function Header({...className}){
 				}
 				.z-index-10{
 					z-index: 10;
+				}
+				.z-index-20{
+					z-index: 20;
+				}
+				.bg-dark-lucent{
+					background: rgba(0,0,0,.5);
 				}
 			`}</style>
 		</header>

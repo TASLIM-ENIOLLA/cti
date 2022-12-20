@@ -2,33 +2,27 @@ export default function handler(_, res){
 	res.status(200).json([
 		{
 			title: 'app development',
-			subtitle: 'we develop mobile application for all platforms using modern codebased by identify client\'s needs and converting them into a working software',
+			subtitle: 'Discover the latest app development tools, platform updates, training, and documentation for developers across every Android, iOS and Window device.',
 			icon: '/icons/app-development.png',
 			query: 'app-development'
 		},
 		{
 			title: 'cloud computing',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
+			subtitle: 'Manage your data across cloud platforms like AWS with the help of our certified engineers either with or instead of on-premises storage',
 			icon: '/icons/cloud-data.png',
 			query: 'cloud-data'
 		},
 		{
 			title: 'computer networking',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
+			subtitle: ' We help make interconnected computers at a private or public level of organization work together seamlessly by effective optimization',
 			icon: '/icons/computer-networks.png',
 			query: 'computer-networks'
 		},
 		{
 			title: 'graphic design',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
+			subtitle: 'Creativity is never far from our reach, let us help bring your colorful imagination to live in the most artistic way possible',
 			icon: '/icons/graphic-designer.png',
 			query: 'graphic-designer'
-		},
-		{
-			title: 'virtual class',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
-			icon: '/icons/virtual-class.png',
-			query: 'virtual-class'
 		},
 		{
 			title: 'web development',
