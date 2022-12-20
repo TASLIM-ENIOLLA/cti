@@ -100,35 +100,35 @@ export default function Contact(){
 											<h2 className = 'text-capitalize text-center text-teal bold'>quick message</h2>
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence half-bold mb-2'>name</p>
+											<p className = 'text-sentence text-muted half-bold mb-2'>name</p>
 											<input value = {formData.name} onChange = {(e) => setFormData({
 												...formData,
 												name: e.target.value
 											})} type = 'name' className = 'd-block bg-light p-3 border-0 rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence half-bold mb-2'>subject</p>
+											<p className = 'text-sentence text-muted half-bold mb-2'>subject</p>
 											<input value = {formData.subject} onChange = {(e) => setFormData({
 												...formData,
 												subject: e.target.value
 											})} type = 'subject' className = 'd-block bg-light p-3 border-0 rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence half-bold mb-2'>email</p>
+											<p className = 'text-sentence text-muted half-bold mb-2'>email</p>
 											<input value = {formData.email} onChange = {(e) => setFormData({
 												...formData,
 												email: e.target.value
 											})} type = 'email' className = 'd-block bg-light p-3 border-0 rounded-lg w-100' />
 										</div>
 										<div className = 'col-md-6 mb-4'>
-											<p className = 'text-sentence half-bold mb-2'>phone</p>
+											<p className = 'text-sentence text-muted half-bold mb-2'>phone</p>
 											<input value = {formData.phone} onChange = {(e) => setFormData({
 												...formData,
 												phone: e.target.value
 											})} type = 'phone' className = 'd-block bg-light p-3 border-0 rounded-lg w-100' />
 										</div>
 										<div className = 'col-12 mb-5'>
-											<p className = 'text-sentence half-bold mb-2'>message</p>
+											<p className = 'text-sentence text-muted half-bold mb-2'>message</p>
 											<textarea value = {formData.message} onChange = {(e) => setFormData({
 												...formData,
 												message: e.target.value

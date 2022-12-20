@@ -8,7 +8,7 @@ import {Fragment, useState, useEffect} from 'react'
 export default function Courses(){
 	return (
 		<Fragment>
-			<Header className = 'bg-white' />
+			<Header />
 			<CoursesComponent />
 			<Footer />
 		</Fragment>
