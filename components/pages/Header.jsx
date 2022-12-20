@@ -1,8 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 import {useEffect, useRef, useState} from 'react'
 
 export default function Header({...className}){
+	const {asPath} = useRouter()
 	const headerComponent = useRef()
 	const [transparencyIndex, setTransparencyIndex] = useState(0)
 
@@ -42,7 +44,7 @@ export default function Header({...className}){
 						<Link href = '/courses' className = 'btn py-2 px-3 bg-teal rounded-2x text-capitalize text-white bold'>view courses</Link>
 					</div>
 					<div className = 'col-lg-d-none col-auto'>
-						<button className = 'border-0 bg-clear'>
+						<button className = 'border-0 btn py-0 bg-clear'>
 							<span className = 'bi-border-width fa-2x'></span>
 						</button>
 					</div>
@@ -52,7 +54,7 @@ export default function Header({...className}){
 			</div>
 			<style jsx>{`
 				.bg-white-lucent{
-					background: rgba(255, 255, 255, ${transparencyIndex});
+					background: rgba(255, 255, 255, ${asPath === '/' ? transparencyIndex : '1'});
 					box-shadow: 0px 0px ${((transparencyIndex / .9) * 9)}px gainsboro;
 				}
 				.z-index-10{

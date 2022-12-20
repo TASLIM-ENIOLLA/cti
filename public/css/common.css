@@ -26,14 +26,14 @@ input:-webkit-autofill:active {
 }
 
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
-    background: transparent;
+    width: 5px;
+    height: 5px;
+    background: rgba(0,0,0,.3);
 }
 
 ::-webkit-scrollbar-thumb {
     cursor: pointer;
-    background: rgba(0,0,0,.1);
+    background: var(--cyan);
 }
 .custom-scroll-bar:hover::-webkit-scrollbar {
     width: 4px !important;
