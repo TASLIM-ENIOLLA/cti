@@ -26,7 +26,7 @@ export default function handler(_, res){
 		},
 		{
 			title: 'web development',
-			subtitle: 'our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
+			subtitle: 'Our team of tech savvys help educated and instill good programming knowledge and ethics in our tutees',
 			icon: '/icons/web-development.png',
 			query: 'web-development'
 		},

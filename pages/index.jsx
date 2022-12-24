@@ -1,4 +1,5 @@
 import {Fragment, useState} from 'react'
+import Script from 'next/script'
 import Header from '/components/pages/Header'
 import Banner from '/components/pages/Banner'
 import About from '/components/pages/About'
@@ -19,6 +20,7 @@ export default function Index(){
 			<Register />
 			<Contact />
 			<Footer />
+			<Script strategy = 'afterInteractive' src = '/js/in-page-navigation.js'></Script>
 		</Fragment>
 	)
 }

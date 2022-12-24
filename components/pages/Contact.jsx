@@ -60,13 +60,13 @@ export default function Contact(){
 													</div>
 													<div className = 'col-12'>
 														<div className = 'mb-3'>
-															<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-810-3589-869'>
-																+234-(0)-810-3589-869
+															<a className = 'text-cyan fo-s-15-' href = 'tel://+234 (0)-810-3589-869'>
+																+234 (0)-810-3589-869
 															</a>
 														</div>
 														<div>
-															<a className = 'text-cyan fo-s-15-' href = 'tel://+234-(0)-708-4712-978'>
-																+234-(0)-708-4712-978
+															<a className = 'text-cyan fo-s-15-' href = 'tel://+234 (0)-708-4712-978'>
+																+234 (0)-708-4712-978
 															</a>
 														</div>
 													</div>
