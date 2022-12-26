@@ -13,7 +13,7 @@ export default function Sevices(){
 	}, [])
 
 	return (
-		<section className = 'bg-white py-5'>
+		<section id = 'services' className = 'bg-white py-5'>
 			<div className = 'container'>
 				<div className = 'row'>
 					<div className = 'col-12 my-5 text-center'>

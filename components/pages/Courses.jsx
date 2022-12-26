@@ -1,10 +1,12 @@
 import {API} from '/api'
 import Link from 'next/link'
 import Image from 'next/image'
+import {useRouter} from 'next/router'
 import {useState, useEffect} from 'react'
 import Loaddeer from '/components/utils/Loaddeer'
 
 export default function Courses(){
+	const {asPath} = useRouter()
 	const [coursesList, setCoursesList] = useState()
 
 	useEffect(() => {
@@ -14,7 +16,7 @@ export default function Courses(){
 	}, [])
 
 	return (
-		<section className = 'bg-white py-5'>
+		<section id = 'courses' className = 'bg-white py-5'>
 			<div className = 'container'>
 				<div className = 'row'>
 					<div className = 'col-12 my-5 text-center'>
@@ -39,7 +41,7 @@ export default function Courses(){
 							))}</div>
 						)
 					}</div>{
-						typeof coursesList != 'undefined'
+						typeof coursesList != 'undefined' && asPath !== '/courses'
 						? (
 							<div className = 'col-12 text-center py-4'>
 								<Link href = '/courses' className = 'bold text-capitalize bg-teal text-white btn rounded-2x px-5 py-3'>

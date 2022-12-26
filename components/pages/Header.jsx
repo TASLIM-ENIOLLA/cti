@@ -9,14 +9,6 @@ export default function Header(){
 	const headerComponent = useRef()
 	const [sideBarState, setSideBarState] = useState(false)
 	const [transparencyIndex, setTransparencyIndex] = useState(0)
-	const _URL = (
-		asPath === '/'
-		? URL.map((each) => ({
-			...each,
-			path: each.path.replace(/^\//, '#')
-		}))
-		: URL
-	)
 
 	useEffect(() => {
 		const headerHeight = Math.ceil(
@@ -43,7 +35,7 @@ export default function Header(){
 							<Image alt = 'logo' src = '/vercel.svg' width = '90' height = '20' />
 						</Link>	
 					</div>
-					<div className = 'col-d-none col-lg-d-block col-auto'>{_URL.map(({name, path}, index) => (
+					<div className = 'col-d-none col-lg-d-block col-auto'>{URL.map(({name, path}, index) => (
 						<Link key = {`${new Date().getTime()}-${index}`} href = {path} id = 'in-page-navigation' className = 'mx-4 text-capitalize d-inline-block'>
 							{name}
 						</Link>
@@ -80,7 +72,7 @@ export default function Header(){
 									</div>
 								</div>
 							</div>
-							<div className = 'col py-5'>{_URL.map(({name, path}, index) => (
+							<div className = 'col py-5'>{URL.map(({name, path}, index) => (
 								<Link href = {path} key = {`${new Date().getTime()}-${index}`} className = 'fo-s-15 text-capitalize d-block w-100 mb-5 bold'>
 									{name}
 								</Link>

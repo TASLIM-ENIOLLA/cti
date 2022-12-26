@@ -12,7 +12,7 @@ export default function Contact(){
 	})
 
 	return (
-		<div className = 'bg-white'>
+		<div id = 'contact' className = 'bg-white'>
 			<section className = 'container py-5'>
 				<div className = 'row'>
 					<div className = 'col-12 my-5 text-center'>

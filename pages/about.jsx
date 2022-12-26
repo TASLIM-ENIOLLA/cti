@@ -18,13 +18,29 @@ export default function About(){
 						</div>
 						<div className = 'col-12 mb-5'>
 							<div className = 'row'>
-								<div className = 'col-12'>
-									<div className = 'row'>
-										<div className = 'col-lg-8'>
-											<h5 className = 'text-capitalize bold'>our story</h5>
-										</div>
+								<div className = 'col-12 mb-5'>
+									<div className = 'row a-i-c'>
 										<div className = 'col-lg-4'>
-											<Image alt = 'Our story image' src = '/icons/storyboard.png' className = 'mb-4' fill = {true} />
+											<img alt = 'Our story image' src = '/icons/storyboard.png' className = 'd-block w-100 mb-4 mx-auto' style = {{maxWidth: '450px'}} />
+										</div>
+										<div className = 'col-lg-8'>
+											<h5 className = 'text-uppercase text-teal bold'>our story</h5>
+											<div className = 'fo-s-15 text-muted text-sentence'>
+												At CodeHub Technological Institute, we provide the best avenue for people to acqiure various IT skill and apply them to solve real life problems. We also empower people to allow them make a living by helping them become professionals who can deliver value-oriented services to clients.
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className = 'col-12 mb-5'>
+									<div className = 'row a-i-c flex-row-reverse'>
+										<div className = 'col-lg-4'>
+											<img alt = 'Our story image' src = '/icons/vision-statement.png' className = 'd-block w-100 mb-4 mx-auto' style = {{maxWidth: '450px'}} />
+										</div>
+										<div className = 'col-lg-8'>
+											<h5 className = 'text-uppercase text-teal bold'>our vision</h5>
+											<div className = 'fo-s-15 text-muted text-sentence'>
+												As the world is a global village, we want to ensure that everyone becomes employable through the acquisition of IT skills irrespective of location. We also hope to make the world a better place by empowering people with IT skills and putting their skills to good use.
+											</div>
 										</div>
 									</div>
 								</div>
