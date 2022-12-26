@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Banner(){
 	return (
@@ -68,10 +69,10 @@ function BannerButtons(){
 	return (
 		<div className = 'row a-i-c'>
 			<div className = 'col-6'>
-				<a href = '/register' className = 'd-block w-100 btn py-3 px-4 bg-teal text-capitalize text-white shadow'>get started</a>
+				<Link href = '/register' className = 'd-block w-100 btn py-3 px-4 bg-teal text-capitalize text-white shadow'>get started</Link>
 			</div>
 			<div className = 'col-6'>
-				<a href = '/contact' className = 'd-block w-100 btn py-3 px-4 bg-clear border-dark border text-capitalize text-dark'>contact us</a>
+				<Link href = '/contact' className = 'd-block w-100 btn py-3 px-4 bg-clear border-dark border text-capitalize text-dark'>contact us</Link>
 			</div>
 		</div>
 	)
