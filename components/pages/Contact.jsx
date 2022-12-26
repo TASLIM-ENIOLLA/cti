@@ -81,20 +81,35 @@ export default function Contact(){
 									<form onSubmit = {(e) => {
 										e.preventDefault()
 
-										fetch(API.SEND_MAIL, {
+										const options = {
 											method: 'POST',
-											body: JSON.stringify(formData),
 											headers: {
-												Accept: 'application/json, text/plain, */*',
-												'Context-type': 'application/json'
-											}
-										})
-										.then((res) => {
-											if(res.status === 200) res.text().then(e => setFormData({
-												name: '', subject: '', email: '', phone: '', message: ''
-											}))
-											else console.log('An error occured!')
-										})
+												'content-type': 'application/json',
+												'X-RapidAPI-Key': '5995c5d375mshdef2d59e0897a55p175605jsn08cb7632deec',
+												'X-RapidAPI-Host': 'rapidprod-sendgrid-v1.p.rapidapi.com'
+											},
+											body: '{"personalizations":[{"to":[{"email":"john@example.com"}],"subject":"Hello, World!"}],"from":{"email":"from_address@example.com"},"content":[{"type":"text/plain","value":"Hello, World!"}]}'
+										};
+
+										fetch('https://rapidprod-sendgrid-v1.p.rapidapi.com/mail/send', options)
+											.then(response => response.json())
+											.then(response => console.log(response))
+											.catch(err => console.error(err));
+
+										// fetch(API.SEND_MAIL, {
+										// 	method: 'POST',
+										// 	body: JSON.stringify(formData),
+										// 	headers: {
+										// 		Accept: 'application/json, text/plain, */*',
+										// 		'Context-type': 'application/json'
+										// 	}
+										// })
+										// .then((res) => {
+										// 	if(res.status === 200) res.text().then(e => setFormData({
+										// 		name: '', subject: '', email: '', phone: '', message: ''
+										// 	}))
+										// 	else console.log('An error occured!')
+										// })
 									}} className = 'row'>
 										<div className = 'col-12 mb-5'>
 											<h2 className = 'text-capitalize text-center text-teal bold'>quick message</h2>

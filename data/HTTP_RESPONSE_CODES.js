@@ -278,5 +278,5 @@ export const HTTP_RESPONSE_CODES = [
 		code: 511,
 		title: 'NETWORK_AUTHENTICATION_REQUIRED',
 		message: 'Network Authentication Required'
-	},
+	}
 ]
