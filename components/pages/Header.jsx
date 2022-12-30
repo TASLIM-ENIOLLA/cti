@@ -29,10 +29,10 @@ export default function Header(){
 	return (
 		<header ref = {headerComponent} className = {`position-sticky transit top-0 left-0 bg-white-lucent z-index-10`}>
 			<div className = 'container'>
-				<div className = 'row a-i-c j-c-space-between py-3 py-lg-4'>
+				<div className = 'row a-i-c j-c-space-between py-3'>
 					<div className = 'col-auto'>
 						<Link href = '/'>
-							<Image alt = 'logo' src = '/vercel.svg' width = '90' height = '20' />
+							<img alt = 'logo' src = '/_codehub.png' width = '200' />
 						</Link>	
 					</div>
 					<div className = 'col-d-none col-lg-d-block col-auto'>{URL.map(({name, path}, index) => (

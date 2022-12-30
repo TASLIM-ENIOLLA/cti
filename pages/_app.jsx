@@ -8,6 +8,7 @@ export default function MyApp({Component, pageProps}){
         <Fragment>
             <Head>
                 <title>Codehub Technological Institute</title>
+                <link rel = 'shortcut icon' href = '/favicon.png' />
             </Head>
             <Component {...pageProps} />
         </Fragment>
